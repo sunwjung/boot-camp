@@ -14,5 +14,22 @@ public class Calculator {
             4. 연산 결과를 콘솔에 출력합니다.
         */
     // TODO...
+    System.out.println("첫번째 숫자를 입력하세요");
+    float first = input.nextFloat();
+    System.out.println("원하시는 연산을 입력하세요(+, -, *, / 중 택 1)");
+    char c = input.next().charAt(0);
+    System.out.println("두번째 숫자를 입력하세요");
+    float second = input.nextFloat();
+
+    if (c == '+')
+      System.out.println(first + second);
+    else if (c == '-')
+      System.out.println(first - second);
+    else if (c == '*')
+      System.out.println(first * second);
+    else if (c == '/')
+      System.out.println(first / second);
+    else
+      System.out.println("Error");
   }
 }
